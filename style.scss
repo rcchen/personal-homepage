@@ -48,13 +48,13 @@ html, body {
 	}
 }
 
-.job {
+.job, .education {
 	&:hover {
 		color: $cloud;
 	}
 }
 
-.job-date {
+.job-date, .education-date {
 	font-size: 16px;
 	font-weight: 300;
 	display: inline-block;
@@ -62,11 +62,11 @@ html, body {
 	vertical-align: top;
 }
 
-.job-graphics {
+.job-graphics, .education-graphics {
 	display: inline-block;
 }
 
-.job-circle {
+.job-circle, .education-circle {
 	width: 9px;
 	height: 9px;
 	border-radius: 4.5px;
@@ -80,13 +80,17 @@ html, body {
 	background-color: $aqua;
 }
 
-.job-dotted-line {
+.job-dotted-line, .education-dotted-line {
 	border-left: 1px dotted $aqua;
 	height: 120px;
 	margin-left: 4px;
 }
 
-.job-description {
+.education-dotted-line {
+	height: 635px;
+}
+
+.job-description, .education-description {
 	margin-left: 10px;
 	display: inline-block;
 	vertical-align: top;
@@ -96,6 +100,47 @@ html, body {
 
 #job-expanded {
 	color: $cloud;
+}
+
+#portfolio {
+	background-color: $cloud;
+	color: $navy;
+	height: 100%;
+	padding: 40px 0px;
+	.project {
+		vertical-align: top;
+		padding: 5px;
+		margin: 0px 3px;
+		width: 300px;
+		display: inline-block;
+		margin-bottom: 20px;
+		position: relative;
+		img {
+			width: 300px;
+			height: 200px;
+		}
+	}
+	.project-caption {
+		text-align: center;
+		padding: 0px 4px;
+		font-weight: 500;
+		letter-spacing: 0.2px;
+		margin-top: 8px;
+	}
+	.project-tech {
+		font-style: italic;
+		font-size: 12px;
+		font-weight: 300;
+		text-align: center;
+		margin: 4px 0px;
+	}
+	.project-description {
+		padding: 0px 4px;
+		margin-top: 4px;
+		text-align: left;
+		font-weight: 300;
+		letter-spacing: 0.2px;
+	}
 }
 
 #photography {
@@ -116,6 +161,9 @@ html, body {
 		padding: 5px;
 		display: inline-block;
 		margin-bottom: 10px;
+		img {
+			width: 300px;
+		}
 	}
 	.album-caption {
 		text-align: center;
@@ -127,16 +175,24 @@ html, body {
 
 #social {
 	padding: 20px 0px;
-	color: $sky;
+	color: $navy;
+	background-color: $cloud;
 	text-align: center;
-	font-size: 30px;
-	a {
-		color: $sky;
-		&:hover {
-			color: $cloud;
-		}
+	#social-caption {
+		font-size: 20px;
+		padding: 10px 0px;
+		font-weight: 300;
 	}
-	i {
-		margin: 0px 5px;
+	#social-icons {
+		font-size: 30px;
+			a {
+		color: $navy;
+		&:hover {
+			color: $blue;
+		}
+		}
+		i {
+			margin: 0px 5px;
+		}
 	}
 }

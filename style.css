@@ -31,20 +31,20 @@ html, body {
 #jobs > div:nth-child(n+2) {
   margin-top: -5px; }
 
-.job:hover {
+.job:hover, .education:hover {
   color: #dce3e6; }
 
-.job-date {
+.job-date, .education-date {
   font-size: 16px;
   font-weight: 300;
   display: inline-block;
   margin-right: 10px;
   vertical-align: top; }
 
-.job-graphics {
+.job-graphics, .education-graphics {
   display: inline-block; }
 
-.job-circle {
+.job-circle, .education-circle {
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -56,12 +56,15 @@ html, body {
   margin-left: 4px;
   background-color: #4dbce9; }
 
-.job-dotted-line {
+.job-dotted-line, .education-dotted-line {
   border-left: 1px dotted #4dbce9;
   height: 120px;
   margin-left: 4px; }
 
-.job-description {
+.education-dotted-line {
+  height: 635px; }
+
+.job-description, .education-description {
   margin-left: 10px;
   display: inline-block;
   vertical-align: top;
@@ -70,6 +73,41 @@ html, body {
 
 #job-expanded {
   color: #dce3e6; }
+
+#portfolio {
+  background-color: #dce3e6;
+  color: #343838;
+  height: 100%;
+  padding: 40px 0px; }
+  #portfolio .project {
+    vertical-align: top;
+    padding: 5px;
+    margin: 0px 3px;
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative; }
+    #portfolio .project img {
+      width: 300px;
+      height: 200px; }
+  #portfolio .project-caption {
+    text-align: center;
+    padding: 0px 4px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 8px; }
+  #portfolio .project-tech {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin: 4px 0px; }
+  #portfolio .project-description {
+    padding: 0px 4px;
+    margin-top: 4px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.2px; }
 
 #photography {
   padding: 20px 0px;
@@ -87,6 +125,8 @@ html, body {
     padding: 5px;
     display: inline-block;
     margin-bottom: 10px; }
+    #photography .album img {
+      width: 300px; }
   #photography .album-caption {
     text-align: center;
     font-weight: 300;
@@ -95,12 +135,18 @@ html, body {
 
 #social {
   padding: 20px 0px;
-  color: #99d2d5;
-  text-align: center;
-  font-size: 30px; }
-  #social a {
-    color: #99d2d5; }
-    #social a:hover {
-      color: #dce3e6; }
-  #social i {
-    margin: 0px 5px; }
+  color: #343838;
+  background-color: #dce3e6;
+  text-align: center; }
+  #social #social-caption {
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 300; }
+  #social #social-icons {
+    font-size: 30px; }
+    #social #social-icons a {
+      color: #343838; }
+      #social #social-icons a:hover {
+        color: #00597f; }
+    #social #social-icons i {
+      margin: 0px 5px; }
