@@ -1,0 +1,142 @@
+$grey: #9699AC;
+$navy: #343838;
+$blue: #00597F;
+$aqua: #4DBCE9;
+$sky: #99D2D5;
+$cloud: #DCE3E6;
+$black: #000000;
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	width: 970px !important;
+}
+
+#main {
+	background-color: $cloud;
+	color: $navy;
+	height: 100%;
+	#description {
+		position: absolute;
+		top: 50%;
+		height: 200px;
+		width: 940px;
+		margin-top: -100px;
+		text-align: center;
+		font-weight: 300;
+		font-size: 24px;
+	}
+}
+
+#name {
+	text-align: center;
+}
+
+#work {
+	background-color: $blue;
+	height: 100%;
+	padding: 60px 0px 20px;
+	min-height: 700px;
+	color: $cloud;
+}
+
+#jobs {
+	&>div:nth-child(n+2) {
+		margin-top: -5px;
+	}
+}
+
+.job {
+	&:hover {
+		color: $cloud;
+	}
+}
+
+.job-date {
+	font-size: 16px;
+	font-weight: 300;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.job-graphics {
+	display: inline-block;
+}
+
+.job-circle {
+	width: 9px;
+	height: 9px;
+	border-radius: 4.5px;
+	background-color: $aqua;
+}
+
+.job-line {
+	width: 1px;
+	height: 120px;
+	margin-left: 4px;
+	background-color: $aqua;
+}
+
+.job-dotted-line {
+	border-left: 1px dotted $aqua;
+	height: 120px;
+	margin-left: 4px;
+}
+
+.job-description {
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 200;
+	letter-spacing: 0.4px;
+}
+
+#job-expanded {
+	color: $cloud;
+}
+
+#photography {
+	#photography-description {
+		text-align: center;
+	}
+	padding: 20px 0px;
+	font-weight: 300;
+	height: 100%;
+	color: $cloud;
+	background-color: $black;
+	.photography-category {
+		font-size: 18px;
+		margin: 30px 0px;
+		text-align: center;
+	}
+	.album {
+		padding: 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.album-caption {
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 0.2px;
+		margin-top: 6px;
+	}
+}
+
+#social {
+	padding: 20px 0px;
+	color: $sky;
+	text-align: center;
+	font-size: 30px;
+	a {
+		color: $sky;
+		&:hover {
+			color: $cloud;
+		}
+	}
+	i {
+		margin: 0px 5px;
+	}
+}
